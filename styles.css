@@ -21,6 +21,10 @@
 
 }
 
+.mobile_v_navbar {
+    display: none;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -390,8 +394,116 @@ footer {
 
 
 @media(max-width :768px) {
+
+    .mobile_v_navbar {
+        display: flex;
+        margin-left: 20.3rem;
+        padding: 0.5rem;
+        top: 8px;
+        position: absolute;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    #menu_pic {
+        width: 17px;
+        height: 20px;
+    }
+
+    .navbar > ul {
+        display: none;
+    }
+
+    #logo_img {
+        width: 8rem;
+        height: 2rem;
+    }
+
+    .navbar {
+        height: 4rem;
+    }
+
+    .about_wrapperI {
+        background-size: contain;
+    }
+
+    .date-selector {
+        grid-template-columns: 13rem;
+        grid-template-rows: 6rem 6rem 2rem;
+    }
+
+    .inputs {
+        flex-direction: column;
+    }
+
+    .book {
+        width: 10rem;
+        margin-left: 1rem;
+    }
+
+    #checkin-date {
+        margin: 5px;
+    }
+
+    .about_discription > p {
+        font-size: 16px;
+        padding: 1rem;
+        width: 105%;
+    }
+
+    .containerIII > h2, p {
+        width: 48%;
+    }
+
+    .house_pic_dis {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,20rem);
+    }
+
+    .containerII > p {
+        width: 45%;
+    }
+
+    .column:nth-child(1) {
+        display: none;
+    }
+
+    .date_column {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .date_column > h1 {
+        font-size: 28px;
+    }
+
+    .date_column > p {
+        font-size: 18px;
+    }
+
+    .discrription_column {
+        margin-top: 14rem;
+        margin-left: 5rem;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    form {
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: 3rem 3rem 3rem 3rem 3rem 3rem 7rem 3rem;
+        padding: 2rem;
+    }
+
+    footer {
+        height: 16rem;
+    }
+
     .event_container {
         flex-direction: column;
+        height: 54rem;
+        padding: 0;
     }
 
     .column {
