@@ -29,20 +29,207 @@
     </header>
 
     <main>
+       
+        <div class="about_wrapperI">
 
         <div class="date-selector">
-            <div class="date-input">
+            <div class="date-input inputs">
                 <label for="checkin">Check-in:</label>
-                <input type="text" id="checkin" placeholder="Select date" readonly>
-            </div>
-            <div class="date-input">
+                <input type="date" id="checkin-date" placeholder="checkin-date" required>
+   
                 <label for="checkout">Check-out:</label>
-                <input type="text" id="checkout" placeholder="Select date" readonly>
+                <input type="date" id="checkout-date" placeholder="checkout-date" required>
+            </div>   
+
+            <div class="person_input inputs">
+                <label for="adult">Adults</label>
+                <input type="number" id="adult" class="persons_input" name="total_adults" placeholder="2" min="1" required>
+
+                <label for="child">Children</label>
+                <input type="number" id="child" class="persons_input" name="total_children" placeholder="0" min="0" required>
+            </div>    
+ 
+            <div class="book inputs">
+                <a class="button_book" href="#">Book</a>
+            </div>  
+        </div>
+
+        <div class="about_discription">
+            <h2 class="titles">About Us:</h2>
+
+            <p>
+                We started our own rental business because, as people who love to travel and meet new people, we 
+                wanted to present our beautiful city the best way we can and because we want our guests not to 
+                feel like tourists and strangers when they visit our city, but like our friends. We offer nothing
+                but quality accommodation to our guests, the one that we would reserve ourselves. We are also 
+                taking care that our guests get everything they need to experience Mostar and Herzegovina at its
+                best. We love to share! We will give you info on how to find a great city to stay or the best
+                tour to explore Herzegovina. We offer various shared or private tours; adrenaline tours 
+                (rafting, biking, off-road, paragliding).
+            </p>
+            <h2 class="titles">House</h2>
+        </div>
+        
+        <div class="house_description">
+
+
+            <div class="house_pic_dis">
+                <div class="containerI">
+                    <img src="img/03-day.jpg" alt="house">
+                </div>
+                <div class="containerII">
+                    <p>
+                        Come and experience nature in this magical lodging, tucked away in the heart of the
+                        Norwegian forest. Disconnect from technology and immerse yourself in the sounds, sights
+                        and smells of the river setting, while still enjoying all the comforts of a modern
+                        cabin.Guests can freely use the mirrored glass cabin, wood-fired hot tub, fireplace 
+                        and outdoor.
+                    </p>
+                </div>
+                <div class="containerIII">
+                    <h2>Our Concern</h2>
+                    <p> 
+                        The way we travel and move has changed  in the last fe years. 
+                        We no longer want typical photo that all our contacts post on instagram 
+                        We no longer want to view the city through the mobile lens. It’s not about
+                        traveling, it’s about discovering. Travellers are 21st century pilgrims who seek
+                        the basic , long-lasting and human assence. The city is a canvas of emotions
+                        and experiences and culture is the invisible architeture that frame it.
+                    </p>
+                </div>
+                <div class="containerIIII">
+                    <img src="img/02-night.jpg" alt="house">
+                </div>
             </div>
+        </div>
+
+        </div>
+
+        <div class="event_wrapper">
+            <div class="header_event">
+                <h2>Our Events</h2>
+            </div>
+            <div class="event_container">
+                <div class="column">
+                    <img src="img/left.png" alt="left">
+                </div>
+
+                <div class="column">
+                    <span class="date_column">
+                        <p>29</p>
+                        <p>oct</p>
+                    </span>
+                    <span class="discrription_column">
+                        <h2>Coctails Party</h2>
+                    </span>
+                </div>
+
+                <div class="column">
+                    <span class="date_column">
+                        <p>30</p>
+                        <p>oct</p>
+                    </span>
+                    <span class="discrription_column">
+                        <h2>Dark House</h2>
+                    </span>
+                </div>
+
+                <div class="column">
+                    <span class="date_column">
+                        <p>31</p>
+                        <p>oct</p>
+                    </span>
+                    <span class="discrription_column">
+                        <h2>Outdoor</h2>
+                    </span>
+                </div>
+                <div class="column">
+                    <img src="img/right.png" alt="right">
+                </div>
+            </div>
+        </div>
+
+        <div class="line_container">
+            <hr class="custom_line">
+        </div>
+
+        <div class="contact_us_container">
+            <h2>Contact Us:</h2>
+            <form>
+                <div class="form_group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form_group">
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surename" name="surname" required>
+                </div>
+                <div class="form_group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div class="form_group">
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country">
+                </div>
+                <div class="form_group">
+                    <label for="phone">Phone:</label>
+                    <input type="number" id="phone" name="phone">
+                </div>
+                <div class="form_group">
+                    <label for="email">email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form_group message_input">
+                    <input type="text" placeholder="Message" required>
+                </div>
+                <div class="form_group send_button">
+                    <a href="#">Send</a>
+                </div>
+            </form>
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+         <div class="footer_column footer_part">
+            <a>
+                <img id="footer_logo_img" src="img/bonz.ai-logo-black-portrait.png" alt="logo">
+            </a>
+         </div>
+         <div class="footer_columnI footer_part">
+            <a>
+                <h2>About</h2>
+            </a>
+         </div>
+         <div class="footer_columnII footer_part">
+            <a>
+                <h2>Reservations</h2>
+            </a>
+         </div>
+         <div class="footer_columnIII footer_part">
+            <a>
+                <h2>News</h2>
+            </a>
+         </div>
+         <div class="footer_columnIIII footer_part">
+            <a>About US</a>
+         </div>
+         <div class="footer_column-5 footer_part">
+            <a>Careers</a>
+         </div>
+         <div class="footer_column-6 footer_part">
+            <a>Find a reservation</a>
+         </div>
+         <div class="footer_column-7 footer_part">
+            <a>Email Preference</a>
+         </div>
+         <div class="footer_column-8 footer_part">
+            <a>Newspaper</a>
+         </div>
+         <div class="footer_column-9 footer_part">
+            <a>Magazine</a>
+         </div>
+    </footer>
     
 </body>
 </html>
