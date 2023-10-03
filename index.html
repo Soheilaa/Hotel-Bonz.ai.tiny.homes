@@ -9,8 +9,7 @@
 </head>
 <body>
 
-    <header class="header">
-        
+    <header>
         <nav class="navbar">
             <div id="logo_wrapper">
                 <a href="index.html">
@@ -18,15 +17,15 @@
                 </a>
             </div>
             <ul>
-                <li class="navbar_li"><a href="#about-part">About Us</a></li>
-                <li class="navbar_li"><a href="pages/rooms.html">Rooms</a></li>
-                <li class="navbar_li"><a href="#">Contact US</a></li>
-                <li class="navbar_li Language">
+                <li><a href="#about-part">About Us</a></li>
+                <li><a href="pages/rooms.html">Rooms</a></li>
+                <li><a href="#contact-us">Contact US</a></li>
+                <li>
                     <a href="#">
-                        <img src="img/language_icons.png" class="icons">
-                        Language
+                        <img class="icons" src="img/language_icons.png">Language
                     </a>
                 </li>
+                <li><a href="pages/booking.html">Book</a></li>
             </ul>
             <nav class="mobile_v_navbar">
                 <a href="#">
@@ -38,79 +37,75 @@
 
     <main>
        
-        <div class="about_wrapperI">
+        <div class="about_wrapper">
+            <div class="date-selector">
+                <div class="date-input inputs">
+                    <label for="checkin">Check-in:</label>
+                    <input type="date" id="checkin-date" placeholder="checkin-date" required>
+    
+                    <label for="checkout">Check-out:</label>
+                    <input type="date" id="checkout-date" placeholder="checkout-date" required>
+                </div>   
 
-        <div class="date-selector">
-            <div class="date-input inputs">
-                <label for="checkin">Check-in:</label>
-                <input type="date" id="checkin-date" placeholder="checkin-date" required>
-   
-                <label for="checkout">Check-out:</label>
-                <input type="date" id="checkout-date" placeholder="checkout-date" required>
-            </div>   
+                <div class="person_input inputs">
+                    <label for="adult">Adults</label>
+                    <input type="number" id="adult" class="persons_input" name="total_adults" placeholder="2" min="1" required>
 
-            <div class="person_input inputs">
-                <label for="adult">Adults</label>
-                <input type="number" id="adult" class="persons_input" name="total_adults" placeholder="2" min="1" required>
+                    <label for="child">Children</label>
+                    <input type="number" id="child" class="persons_input" name="total_children" placeholder="0" min="0" required>
+                </div>    
+    
+                <div class="book inputs">
+                    <a class="button_book" href="#">Book</a>
+                </div>  
+            </div>
 
-                <label for="child">Children</label>
-                <input type="number" id="child" class="persons_input" name="total_children" placeholder="0" min="0" required>
-            </div>    
- 
-            <div class="book inputs">
-                <a class="button_book" href="#">Book</a>
-            </div>  
-        </div>
+            <div class="about_discription" id="about-part">
+                <h2 class="titles">About Us:</h2>
 
-        <div class="about_discription" id="about-part">
-            <h2 class="titles">About Us:</h2>
-
-            <p>
-                We started our own rental business because, as people who love to travel and meet new people, we 
-                wanted to present our beautiful city the best way we can and because we want our guests not to 
-                feel like tourists and strangers when they visit our city, but like our friends. We offer nothing
-                but quality accommodation to our guests, the one that we would reserve ourselves. We are also 
-                taking care that our guests get everything they need to experience Mostar and Herzegovina at its
-                best. We love to share! We will give you info on how to find a great city to stay or the best
-                tour to explore Herzegovina. We offer various shared or private tours; adrenaline tours 
-                (rafting, biking, off-road, paragliding).
-            </p>
-            <h2 class="titles">House</h2>
-        </div>
+                <p>
+                    We started our own rental business because, as people who love to travel and meet new people, we 
+                    wanted to present our beautiful city the best way we can and because we want our guests not to 
+                    feel like tourists and strangers when they visit our city, but like our friends. We offer nothing
+                    but quality accommodation to our guests, the one that we would reserve ourselves. We are also 
+                    taking care that our guests get everything they need to experience Mostar and Herzegovina at its
+                    best. We love to share! We will give you info on how to find a great city to stay or the best
+                    tour to explore Herzegovina. We offer various shared or private tours; adrenaline tours 
+                    (rafting, biking, off-road, paragliding).
+                </p>
+                <h2 class="titles">House</h2>
+            </div>
         
-        <div class="house_description">
-
-
-            <div class="house_pic_dis">
-                <div class="containerI">
-                    <img src="img/03-day.jpg" alt="house">
-                </div>
-                <div class="containerII">
-                    <p>
-                        Come and experience nature in this magical lodging, tucked away in the heart of the
-                        Norwegian forest. Disconnect from technology and immerse yourself in the sounds, sights
-                        and smells of the river setting, while still enjoying all the comforts of a modern
-                        cabin.Guests can freely use the mirrored glass cabin, wood-fired hot tub, fireplace 
-                        and outdoor.
-                    </p>
-                </div>
-                <div class="containerIII">
-                    <h2>Our Concern</h2>
-                    <p> 
-                        The way we travel and move has changed  in the last fe years. 
-                        We no longer want typical photo that all our contacts post on instagram 
-                        We no longer want to view the city through the mobile lens. It’s not about
-                        traveling, it’s about discovering. Travellers are 21st century pilgrims who seek
-                        the basic , long-lasting and human assence. The city is a canvas of emotions
-                        and experiences and culture is the invisible architeture that frame it.
-                    </p>
-                </div>
-                <div class="containerIIII">
-                    <img src="img/02-night.jpg" alt="house">
+            <div class="house_description">
+                <div class="house_pic_dis">
+                    <div class="containerI">
+                        <img src="img/03-day.jpg" alt="house">
+                    </div>
+                    <div class="containerII">
+                        <p>
+                            Come and experience nature in this magical lodging, tucked away in the heart of the
+                            Norwegian forest. Disconnect from technology and immerse yourself in the sounds, sights
+                            and smells of the river setting, while still enjoying all the comforts of a modern
+                            cabin.Guests can freely use the mirrored glass cabin, wood-fired hot tub, fireplace 
+                            and outdoor.
+                        </p>
+                    </div>
+                    <div class="containerIII">
+                        <h2>Our Concern</h2>
+                        <p> 
+                            The way we travel and move has changed  in the last fe years. 
+                            We no longer want typical photo that all our contacts post on instagram 
+                            We no longer want to view the city through the mobile lens. It’s not about
+                            traveling, it’s about discovering. Travellers are 21st century pilgrims who seek
+                            the basic , long-lasting and human assence. The city is a canvas of emotions
+                            and experiences and culture is the invisible architeture that frame it.
+                        </p>
+                    </div>
+                    <div class="containerIIII">
+                        <img src="img/02-night.jpg" alt="house">
+                    </div>
                 </div>
             </div>
-        </div>
-
         </div>
 
         <div class="event_wrapper">
@@ -161,7 +156,7 @@
             <hr class="custom_line">
         </div>
 
-        <div class="contact_us_container">
+        <div class="contact_us_container" id="contact-us">
             <h2>Contact Us:</h2>
             <form>
                 <div class="form_group">
