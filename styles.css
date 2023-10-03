@@ -57,7 +57,32 @@ ul {
     background-position: center;
     height: 100vh;
 }
+/* rooms header */
+.header_rooms_page {
+    background-image: url('img/04-day.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
 
+.discription_rooms_header {
+    background-color: #b7a99c4f;
+    width: 31%;
+    height: 56%;
+    padding: 1rem;
+}
+
+#header_rooms_dis {
+    font-size: 33px;
+}
+
+.discription_rooms_header h2,
+.discription_rooms_header p {
+    color: white;
+    font-size: 13px;
+    padding-left: 4rem;
+}
+/* rooms header */
 /* header */
 
 /* main */
@@ -327,6 +352,89 @@ form {
     display: flex;
     justify-content: center;
 }
+/* rooms main */
+.delux-cosy-discription {
+    background-image: url(img/rooms-pattern.avif);
+    background-size: contain;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20rem 20rem;
+}
+
+.delux-container:nth-child(1),
+.delux-container:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 11rem;
+}
+
+.delux-container > a {
+    border: 1px solid blue;
+    padding: 6px;
+    width: 17rem;
+    display: flex;
+    justify-content: center;
+}
+
+.delux-container:nth-child(2) {
+    background-image: url(img/05-night.jpg);
+    background-size: cover;
+}
+
+.delux-container:nth-child(3) {
+    background-image: url(img/01-night.jpg);
+    background-size: cover;
+}
+
+.check-difference-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-difference-container > h2 {
+    padding: 2rem;
+}
+.master-col-check-diff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-check-diff {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+
+.col-diff {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+.col-diff > h1 {
+    padding-bottom: 3rem;
+    font-size: 19px;
+}
+
+.col-list-diff,
+.col-diff > p 
+{
+    columns: 1;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+
+}
+
+/* rooms main */
 /* main */
 
 /* footer */
@@ -510,4 +618,57 @@ footer {
         flex-basis: 100%;
         margin-bottom: 1rem;
     }
+    /* rooms page mobile version */
+    .mobile_v_navbar-rooms {
+        display: flex;
+        justify-content: center;
+    }
+
+    .discription_rooms_header {
+        width: 57%;
+        height: 44%;
+    }
+
+    #header_rooms_dis {
+        font-size: 21px;
+    }
+
+    .discription_rooms_header h2, 
+    .discription_rooms_header p {
+        font-size: 12px;
+        padding-left: 1rem;
+        width: 91%;
+    }
+
+
+    .delux-cosy-discription {
+        background-image: url(img/rooms-pattern.avif);
+        background-size: contain;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20rem 20rem 20rem 20rem;
+    }
+
+    .delux-container:nth-child(1), .delux-container:nth-child(4) {
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 1rem;
+    }
+
+    .delux-container > p {
+        width: 85%;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .col-check-diff {
+        grid-template-columns: 48% 48%;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .col-diff {
+        padding: 3rem;
+    }
+    /* rooms page mobile version */
 }
