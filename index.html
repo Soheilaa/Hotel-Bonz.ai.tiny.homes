@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
     <link rel="stylesheet" href="styles.css">
     <title>bonzai</title>
 </head>
@@ -12,8 +14,11 @@
     <header>
         <nav class="navbar">
             <div id="logo_wrapper">
-                <a href="index.html">
+                <a  id="logo_desk" class="mobile_v_navbar" href="index.html">
                     <img src="img/bonz.ai-logo-black-landscape.png" id="logo_img" alt="logo">
+                </a>
+                <a class="mobile_v_navbar" href="#">
+                    <img src="img/menu.png" alt="menu" id="menu_pic">
                 </a>
             </div>
             <ul>
@@ -27,19 +32,15 @@
                 </li>
                 <li><a href="pages/booking.html">Book</a></li>
             </ul>
-            <nav class="mobile_v_navbar">
-                <a href="#">
-                    <img src="img/menu.png" alt="menu" id="menu_pic">
-                </a>
-            </nav>
+            
         </nav>
     </header>
 
     <main>
        
         <div class="about_wrapper">
-            <div class="date-selector">
-                <div class="date-input inputs">
+            <div class="about-book">
+                <div class="about-book-date">
                     <label for="checkin">Check-in:</label>
                     <input type="date" id="checkin-date" placeholder="checkin-date" required>
     
@@ -47,7 +48,7 @@
                     <input type="date" id="checkout-date" placeholder="checkout-date" required>
                 </div>   
 
-                <div class="person_input inputs">
+                <div class="about-book-date">
                     <label for="adult">Adults</label>
                     <input type="number" id="adult" class="persons_input" name="total_adults" placeholder="2" min="1" required>
 
@@ -55,13 +56,13 @@
                     <input type="number" id="child" class="persons_input" name="total_children" placeholder="0" min="0" required>
                 </div>    
     
-                <div class="book inputs">
+                <div class="about-book-date">
                     <a class="button_book" href="#">Book</a>
                 </div>  
             </div>
 
             <div class="about_discription" id="about-part">
-                <h2 class="titles">About Us:</h2>
+                <h2>About Us:</h2>
 
                 <p>
                     We started our own rental business because, as people who love to travel and meet new people, we 
@@ -73,15 +74,15 @@
                     tour to explore Herzegovina. We offer various shared or private tours; adrenaline tours 
                     (rafting, biking, off-road, paragliding).
                 </p>
-                <h2 class="titles">House</h2>
+                <h2>House</h2>
             </div>
         
             <div class="house_description">
-                <div class="house_pic_dis">
-                    <div class="containerI">
+                <div class="house_discription_wrapper">
+                    <div class="house_container">
                         <img src="img/03-day.jpg" alt="house">
                     </div>
-                    <div class="containerII">
+                    <div class="house_container">
                         <p>
                             Come and experience nature in this magical lodging, tucked away in the heart of the
                             Norwegian forest. Disconnect from technology and immerse yourself in the sounds, sights
@@ -90,7 +91,7 @@
                             and outdoor.
                         </p>
                     </div>
-                    <div class="containerIII">
+                    <div class="house_container">
                         <h2>Our Concern</h2>
                         <p> 
                             The way we travel and move has changed  in the last fe years. 
@@ -101,7 +102,7 @@
                             and experiences and culture is the invisible architeture that frame it.
                         </p>
                     </div>
-                    <div class="containerIIII">
+                    <div class="house_container">
                         <img src="img/02-night.jpg" alt="house">
                     </div>
                 </div>
@@ -109,15 +110,15 @@
         </div>
 
         <div class="event_wrapper">
-            <div class="header_event">
+            <div class="event_header">
                 <h2>Our Events</h2>
             </div>
             <div class="event_container">
-                <div class="column">
+                <div class="event_cont_column">
                     <img src="img/left.png" alt="left">
                 </div>
 
-                <div class="column">
+                <div class="event_cont_column">
                     <span class="date_column">
                         <h1>29</h1>
                         <p>oct</p>
@@ -127,7 +128,7 @@
                     </span>
                 </div>
 
-                <div class="column">
+                <div class="event_cont_column">
                     <span class="date_column">
                         <h1>30</h1>
                         <p>oct</p>
@@ -137,7 +138,7 @@
                     </span>
                 </div>
 
-                <div class="column">
+                <div class="event_cont_column">
                     <span class="date_column">
                         <h1>31</h1>
                         <p>oct</p>
@@ -146,7 +147,7 @@
                         <h2>Outdoor</h2>
                     </span>
                 </div>
-                <div class="column">
+                <div class="event_cont_column">
                     <img src="img/right.png" alt="right">
                 </div>
             </div>
@@ -156,41 +157,57 @@
             <hr class="custom_line">
         </div>
 
-        <div class="contact_us_container" id="contact-us">
+        <div class="contact_container" id="contact-us">
             <h2>Contact Us:</h2>
             <form>
-                <div class="form_group">
+                <div class="contact_items">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
-                <div class="form_group">
+                <div class="contact_items">
                     <label for="surname">Surname:</label>
                     <input type="text" id="surename" name="surname" required>
                 </div>
-                <div class="form_group">
+                <div class="contact_items">
                     <label for="city">City:</label>
                     <input type="text" id="city" name="city">
                 </div>
-                <div class="form_group">
+                <div class="contact_items">
                     <label for="country">Country:</label>
                     <input type="text" id="country" name="country">
                 </div>
-                <div class="form_group">
+                <div class="contact_items">
                     <label for="phone">Phone:</label>
                     <input type="number" id="phone" name="phone">
                 </div>
-                <div class="form_group">
+                <div class="contact_items">
                     <label for="email">email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                <div class="form_group message_input">
+                <div class="contact_items message_input">
                     <input type="text" placeholder="Message" required>
                 </div>
-                <div class="form_group send_button">
+                <div class="contact_items send_button">
                     <a href="#">Send</a>
                 </div>
             </form>
         </div>
+
+        <section class="member_container">
+            <div class="member_co_items">
+                <img src="img/member.png" alt="member">
+            </div>
+            <div class="member_co_items">
+                <p>MEMBERS EXPERIENCE MORE</p>
+                <h2>Only good reason to become a member</h2>
+                <p>Discount on hotel rooms. First priority on offers and News.
+                    Bonos points for which you can book hotel rooms.Free coffee-whenever
+                    you want.Do like 2.4 million others,become a member.
+                </p>
+                <a class="member_co_items_button">Sing up</a>
+                <a href="#">Read more about membership</a>
+            </div>
+        </section>
     </main>
 
     <footer>

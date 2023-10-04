@@ -8,6 +8,10 @@
     padding-left: 1rem;
 }
 
+#logo_desk {
+    display: flex;
+}
+
 #logo_img {
     width: 13rem;
     height: 3rem;
@@ -131,6 +135,7 @@ ul {
 .navbar li a {
     text-decoration:none;
     color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -181,7 +186,7 @@ header {
     flex-direction: column;
 }
 
-.date-selector {
+.about-book {
     display: grid;
     grid-template-columns:repeat(3,auto);
     grid-template-rows: 3rem;
@@ -203,7 +208,7 @@ header {
     align-items: center;
 }
 
-.inputs {
+.about-book-date {
     display: flex;
     flex-direction: row;
     padding: 5px;
@@ -215,13 +220,13 @@ header {
     width: 4rem;
 }
 
-.book {
+.about-book-date:nth-child(3) {
     background-color: #a99c7f;
     width: 4rem;
     justify-content: center;
 }
 
-.book > a {
+.about-book-date:nth-child(3) > a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -237,7 +242,7 @@ header {
     margin-top: 2rem;
 }
 
-.titles {
+.about_discription > h2 {
     padding: 1rem;
     font-size: 30px;
     font-weight: bold;
@@ -246,48 +251,52 @@ header {
 .about_discription > p {
     font-size: 18px;
     padding: 3rem;
+    font-family: 'Roboto', sans-serif;
 }
 
-.house_pic_dis {
+.house_discription_wrapper {
     position: relative;
     display: grid;
     grid-template-columns:50% 50%;
     grid-template-rows: repeat(2,20rem)
 }
-.containerI {
+.house_container:nth-child(1) {
     grid-area: 1/1/2/2;
 }
 
-.containerII {
+.house_container:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.containerII > p {
+.house_container:nth-child(2) > p {
     width: 70%;
+    font-family: 'Roboto', sans-serif;
 }
 
-.containerI > img {
+.house_container:nth-child(1) > img {
     width: 40rem;
     height: 20rem;
 }
 
-.containerIII {
+.house_container:nth-child(3) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.containerIII > h2,p {
+.house_container:nth-child(3) > h2,p {
     width: 70%;
     justify-content: center;
     display: flex;
     margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
-.containerIIII > img{
+.house_container:nth-child(4) > img{
     width: 40rem;
     height: 20rem;
 }
@@ -297,7 +306,7 @@ header {
     padding: 3rem;
 }
 
-.header_event > h2 {
+.event_header > h2 {
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -316,39 +325,35 @@ header {
     padding: 3rem;
 }
 
-.column {
+.event_cont_column {
     flex-basis: calc(33.33% - 2rem);
-    /* background-color:  #d1d1d1; */
     padding: 10px;
     border-radius: 5px;
-    /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
     height: 21rem;
 }
-.column:nth-child(1) {
-    /* background-color: #d1d1d1; */
+.event_cont_column:nth-child(1) {
     position: absolute;
     top: 118rem;
     display: flex;
     align-items: center;
     left: 3.7rem;
 }
-.column:nth-child(2) {
+.event_cont_column:nth-child(2) {
     background-image: url(img/HalloweenEvent.jpg);
     background-size: cover;
 }
 
-.column:nth-child(3) {
+.event_cont_column:nth-child(3) {
     background-image: url(img/holloweenII.jpg);
     background-size: cover;
 }
 
-.column:nth-child(4) {
+.event_cont_column:nth-child(4) {
     background-image: url(img/HalloweenIII.jpg);
     background-size: cover;
 }
 
-.column:nth-child(5) {
-    /* background-color: #d1d1d1; */
+.event_cont_column:nth-child(5) {
     position: absolute;
     top: 118rem;
     left: 74rem;
@@ -367,17 +372,17 @@ header {
     margin-left: 5rem;
     text-decoration: none;
 }
-.column:nth-child(5) > img {
+.event_cont_column:nth-child(5) > img {
     width: 1rem;
     height: 2rem;
 }
-.column:nth-child(1) > img {
+.event_cont_column:nth-child(1) > img {
     width: 1rem;
     height: 2rem;
 }
 
 
-.contact_us_container {
+.contact_container {
     background-color: #d1d1d1;;
     display: flex;
     flex-direction: column;
@@ -386,7 +391,7 @@ header {
     padding-top: 2rem;
 }
 
-.contact_us_container > h2 {
+.contact_container > h2 {
     font-size: 30px;
 }
 
@@ -413,7 +418,7 @@ form {
     margin-bottom: 1rem;
 }
 
-.form_group {
+.contact_items {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -434,6 +439,54 @@ form {
     display: flex;
     justify-content: center;
 }
+
+.member_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 16rem;
+    height: 13rem;
+}
+
+.member_co_items:nth-child(1) {
+    background-color: #ffd6d4;
+}
+
+.member_co_items:nth-child(2) {
+    background-color: white;
+}
+.member_co_items:nth-child(1) > img {
+    width: 20rem;
+    height: 16rem;
+}
+.member_co_items:nth-child(2),
+.member_co_items:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.member_co_items:nth-child(2) > h2 {
+    font-size: 23px;
+    width: 18rem;
+    text-align: center;
+}
+
+.member_co_items_button {
+    padding: 1rem;
+    background-color: rgb(231, 78, 106);
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.member_co_items:nth-child(2) > p {
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-bottom: 1rem;
+}
 /* rooms main */
 .delux-cosy-discription {
     background-image: url(img/rooms-pattern.avif);
@@ -450,6 +503,14 @@ form {
     justify-content: space-around;
     align-items: flex-start;
     padding-left: 11rem;
+}
+
+.delux-container:nth-child(1) >h2,
+.delux-container:nth-child(4) >h2 {
+    font-family: 'Amatic SC', cursive;
+    justify-content: center;
+    display: flex;
+    width: 70%;
 }
 
 .delux-container > a {
@@ -479,6 +540,7 @@ form {
 
 .check-difference-container > h2 {
     padding: 2rem;
+    font-family: 'Amatic SC', cursive;
 }
 .master-col-check-diff{
     display: flex;
@@ -503,6 +565,7 @@ form {
 .col-diff > h1 {
     padding-bottom: 3rem;
     font-size: 19px;
+    font-family: 'Amatic SC', cursive;
 }
 
 .col-list-diff,
@@ -513,6 +576,7 @@ form {
     margin: 0;
     display: inline-block;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -526,7 +590,8 @@ footer {
     grid-template-rows: 7rem 3rem 3rem 3rem 3rem;
     background-image: url(img/footer.jpg);
     background-size: cover;
-    height: 18rem;
+    height: 13rem;
+    padding: 5rem;
 }
 
 #footer_logo_img {
@@ -583,26 +648,49 @@ footer {
 
 /*  landing page */
 @media screen and (max-width: 768px) and (min-width: 531px) { 
-    .mobile_v_navbar {
-        margin-left: 30.3rem;
+    
+    .member_container {
+        display: none;
     }
 }
 /*  landing page */
 
 @media(max-width :768px) {
 
-    .mobile_v_navbar {
+    .member_container{
+        display: none;
+    }
+
+    #logo_wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 4rem;
+        width: 100%;
+    }
+
+    .mobile_v_navbar:nth-child(1) {
+        grid-area: 1/1/2/2;
         display: flex;
-        margin-left: 21.3rem;
-        padding: 0.5rem;
-        top: 8px;
-        position: absolute;
+        justify-content:  flex-start;
+        align-items: center;
+    }
+
+    .mobile_v_navbar:nth-child(2) {
+        grid-area: 1/2/2/3;
+        padding: 5px;
+        width: 2rem;
+        height: 2rem;
         background-color: white;
         border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 77%;
+        margin-top: 10px;
     }
 
     #menu_pic {
-        width: 17px;
+        width: 23px;
         height: 20px;
     }
 
@@ -623,16 +711,16 @@ footer {
         background-size: contain;
     }
 
-    .date-selector {
+    .about-book {
         grid-template-columns: 13rem;
         grid-template-rows: 6rem 6rem 2rem;
     }
 
-    .inputs {
+    .about-book-date {
         flex-direction: column;
     }
 
-    .book {
+    .about-book-date:nth-child(3) {
         width: 10rem;
         margin-left: 1rem;
     }
@@ -647,20 +735,20 @@ footer {
         width: 105%;
     }
 
-    .containerIII > h2, p {
+    .house_container:nth-child(3) > h2, p {
         width: 48%;
     }
 
-    .house_pic_dis {
+    .house_discription_wrapper {
         grid-template-columns: 100%;
         grid-template-rows: repeat(4,20rem);
     }
 
-    .containerII > p {
+    .house_container:nth-child(2) > p {
         width: 45%;
     }
 
-    .column:nth-child(1) {
+    .event_cont_column:nth-child(1) {
         display: none;
     }
 
@@ -702,7 +790,7 @@ footer {
         padding: 0;
     }
 
-    .column {
+    .event_cont_column {
         flex-basis: 100%;
         margin-bottom: 1rem;
     }
