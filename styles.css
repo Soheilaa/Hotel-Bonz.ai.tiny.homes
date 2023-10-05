@@ -114,6 +114,7 @@
     background-image: url(img/06-night.jpg);
     background-size: cover;
 }
+
 ul {
     display: flex;
     flex-direction: row;
@@ -773,6 +774,10 @@ footer {
         background-color: white;
         border-radius: 5px;
     }
+    .house_container:nth-child(1) > img,
+    .house_container:nth-child(4) > img {
+        width: 48rem;
+    }
 
     form {
         grid-template-columns: repeat(1,100%);
@@ -847,4 +852,48 @@ footer {
         padding: 3rem;
     }
     /* rooms page mobile version */
+
+    /* booking page */
+    .options_container {
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: 3rem 22rem 15rem auto;
+        width: 80%;
+    }
+    .options {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .options_co_in {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .options_co_in:nth-child(1) {
+        grid-area: 1/1/2/3;
+    }
+    
+    .options_co_in:nth-child(2) {
+        grid-area: 4/1/5/3;
+        align-items: center;
+    }
+
+    .options_co_in:nth-child(2) >ul li{
+        text-align: center;
+    }
+
+    .options_co_in:nth-child(3) {
+        grid-area: 2/1/3/3;
+    }
+
+    .options_co_in:nth-child(4) {
+        align-items: center;
+    }
+
+    .options_co_inI:nth-child(3) {
+        grid-area: 2/1/3/3;
+    }
+    /* booking page */
 }
